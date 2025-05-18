@@ -12,20 +12,22 @@ public class StringReverse {
         // Step 2: Validate Credentials
         if (username.equals(VALID_USERNAME) && password.equals(VALID_PASSWORD)) {
             // Step 3: Show Reversal UI
-            System.out.println("✅ Login successful!");
+            System.out.println("Login successful!!!");
             // Step 4: User Enters String
             System.out.print("Enter a string to reverse: ");
             String input = scanner.nextLine();
             // Step 5: Reverse String
-            String reversed = "";
+            String reversed = " ";
             for (int i = input.length() - 1; i >= 0; i--) {
                 reversed += input.charAt(i);
             }
             // Step 6: Show Result
             System.out.println("Reversed String: " + reversed);
-        } else {
+        } 
+        else 
+        {
             // Step 7: Show Error Message
-            System.out.println("❌ Invalid username or password.");
+            System.out.println("Invalid username or password");
         }
         // End
         scanner.close();
